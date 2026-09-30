@@ -41,7 +41,15 @@
     </section>
 
     <section class="trip" aria-labelledby="trip-title">
-      <h2 id="trip-title">What my next steps are</h2>
+      <h2 id="trip-title">Where I'd like to go</h2>
+      <label for="destination">Pick a place, and I'll tell you why:</label>
+      <select id="destination">
+        <option value="" selected disabled>Choose a destination&hellip;</option>
+        <option value="california">California, USA</option>
+        <option value="japan">Japan</option>
+        <option value="china">China</option>
+      </select>
+      <p id="destination-note" class="postcard"></p>
     </section>
 
     <section aria-labelledby="jobs-title">
