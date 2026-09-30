@@ -1,3 +1,5 @@
+
+Style · CSS
 :root {
   --ink: #0f0d12;
   --panel: #17141c;
@@ -20,7 +22,7 @@ body {
 h1, h2, summary, .greeting, .links a, figcaption {
   font-family: "Bricolage Grotesque", system-ui, sans-serif;
 }
-
+ 
 /* ---------- Parallax desert hero ---------- */
 .hero {
   position: relative;
@@ -110,7 +112,7 @@ h1 {
   color: var(--ink);
   transform: translateY(-2px);
 }
-
+ 
 /* ---------- Content ---------- */
 main { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.5rem; }
 section { margin-top: 3.5rem; }
@@ -140,7 +142,7 @@ figure button:hover, figure button:focus-visible {
 }
 figure img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--line); }
 figcaption { font-size: 0.95rem; margin-top: 0.5rem; color: var(--paper-dim); }
-
+ 
 .trip {
   border: 1px solid var(--line);
   border-left: 4px solid var(--turquoise);
@@ -149,9 +151,25 @@ figcaption { font-size: 0.95rem; margin-top: 0.5rem; color: var(--paper-dim); }
   border-radius: 4px;
 }
 .trip h2 { margin-top: 0; border-bottom: 0; padding-bottom: 0; }
-.postcard { margin: 0; color: var(--paper-dim); }
+.trip label { display: block; margin-bottom: 0.5rem; color: var(--paper-dim); }
+.trip select {
+  font: inherit;
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  color: var(--paper);
+  background: var(--ink);
+  border: 1.5px solid var(--gold);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.trip select:hover, .trip select:focus-visible {
+  border-color: var(--clay-bright);
+  transform: translateY(-1px);
+}
+.postcard { margin: 1rem 0 0; color: var(--paper-dim); min-height: 1.6em; }
 .postcard strong { font-size: 1.3rem; color: var(--clay-bright); }
-
+ 
 details {
   border-bottom: 1px solid var(--line);
   padding: 0.85rem 0;
@@ -167,9 +185,9 @@ summary {
 }
 summary:hover { color: var(--turquoise); }
 details p { margin: 0.6rem 0 0; color: var(--paper-dim); }
-
+ 
 footer { text-align: center; padding: 2.5rem; color: var(--paper-dim); border-top: 1px solid var(--line); }
-
+ 
 dialog { border: 0; padding: 1rem; max-width: min(90vw, 60rem); background: var(--panel); color: var(--paper); }
 dialog img { max-width: 100%; max-height: 75vh; display: block; margin-bottom: 0.75rem; border-radius: 4px; }
 dialog::backdrop { background: rgba(10, 8, 12, 0.9); }
@@ -183,10 +201,11 @@ dialog button {
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 dialog button:hover { border-color: var(--gold); color: var(--gold); }
-
+ 
 :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
-
+ 
 @media (prefers-reduced-motion: reduce) {
   .layer { transform: none !important; }
   * { transition: none !important; }
 }
+ 
