@@ -35,20 +35,6 @@ if (!prefersReducedMotion) {
   });
 }
 
-// Destination dropdown: show why each place is on the list
-const destinationNotes = {
-  california: "Silicon Valley is home to Google, Apple, Meta, and so many other companies pushing AI and software forward. I'd love to be close to that energy.",
-  japan: "Tokyo has huge tech names like Sony, Nintendo, and SoftBank, plus a strong robotics and AI research scene I'd want to learn from.",
-  china: "Shenzhen and Beijing are home to giants like Tencent, Alibaba, and ByteDance, and some of the fastest-moving tech development in the world.",
-};
-const destinationSelect = document.getElementById("destination");
-const destinationNote = document.getElementById("destination-note");
-if (destinationSelect) {
-  destinationSelect.addEventListener("change", () => {
-    destinationNote.textContent = destinationNotes[destinationSelect.value] || "";
-  });
-}
-
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
