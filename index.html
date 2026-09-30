@@ -2,84 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sean Amihan | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700;800&family=Newsreader:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="scene" aria-hidden="true">
-      <div class="layer sun"></div>
-      <div class="layer ridge-far"></div>
-      <div class="layer ridge-mid"></div>
-      <div class="layer dunes"></div>
-      <div class="layer cacti"></div>
-    </div>
-    <div class="hero-text">
-      <p id="greeting" class="greeting">Hello</p>
-      <h1>Sean Amihan</h1>
-      <p class="from">From Connecticut. Learning to code with CodeSquad.</p>
-      <nav class="links" aria-label="My profiles">
-        <a href="https://www.linkedin.com/in/sean-amihan-1145753a3/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/seana-rgb" target="_blank" rel="noopener">GitHub</a>
-      </nav>
-    </div>
+
+  <header>
+    <h1>Sean Amihan</h1>
+    <p>From Connecticut. Learning to code with CodeSquad.</p>
+    <p>
+      <a href="https://www.linkedin.com/in/sean-amihan-1145753a3/" target="_blank">LinkedIn</a>
+      |
+      <a href="https://github.com/seana-rgb" target="_blank">GitHub</a>
+    </p>
   </header>
 
   <main>
-    <section aria-labelledby="work-title">
-      <h2 id="work-title">My CodeSquad work</h2>
-      <p class="note">Click a screenshot to enlarge it.</p>
-      <div class="shots">
-        <figure><button type="button" data-full="images/screenshot1.png"><img src="images/screenshot1.png" alt="Styled confidential memo page with code editor view"></button><figcaption>Confidential Memo: styling a page with borders, box shadows, and text formatting in CSS.</figcaption></figure>
-        <figure><button type="button" data-full="images/screenshot2.png"><img src="images/screenshot2.png" alt="Say Hello contact form with code editor view"></button><figcaption>Contact Form: a &quot;Say Hello&quot; form built with semantic HTML and a gradient background.</figcaption></figure>
-        <figure><button type="button" data-full="images/screenshot3.png"><img src="images/screenshot3.png" alt="Blog post card with code editor view"></button><figcaption>Blog Post Card: an image, title, and call-to-action button laid out as a reusable card component.</figcaption></figure>
-      </div>
+
+    <section>
+      <h2>My CodeSquad Work</h2>
+      <p>Here are a few screenshots from my CodeSquad Mini Course assignments.</p>
+
+      <a href="images/screenshot1.png" target="_blank">
+        <img src="images/screenshot1.png" alt="Screenshot of my confidential memo assignment" width="300">
+      </a>
+      <p>Confidential Memo: styling a page with borders, box shadows, and text formatting in CSS.</p>
+
+      <a href="images/screenshot2.png" target="_blank">
+        <img src="images/screenshot2.png" alt="Screenshot of my contact form assignment" width="300">
+      </a>
+      <p>Contact Form: a "Say Hello" form built with HTML and a gradient background.</p>
+
+      <a href="images/screenshot3.png" target="_blank">
+        <img src="images/screenshot3.png" alt="Screenshot of my blog post card assignment" width="300">
+      </a>
+      <p>Blog Post Card: an image, title, and button laid out as a card.</p>
     </section>
 
-    <section aria-labelledby="trip-title">
-      <h2 id="trip-title">Where I'd like to go</h2>
+    <section>
+      <h2>Where I'd Like to Go</h2>
+
       <details>
         <summary>California, USA</summary>
-        <p>Silicon Valley is home to Google, Apple, Meta, and so many other companies pushing AI and software forward. I'd love to be close to that energy.</p>
+        <p>Silicon Valley is home to Google, Apple, and Meta. I'd love to be close to that energy.</p>
       </details>
+
       <details>
         <summary>Japan</summary>
-        <p>Tokyo has huge tech names like Sony, Nintendo, and SoftBank, plus a strong robotics and AI research scene I'd want to learn from.</p>
+        <p>Tokyo has big tech names like Sony, Nintendo, and SoftBank, plus a strong robotics scene.</p>
       </details>
+
       <details>
         <summary>China</summary>
-        <p>Shenzhen and Beijing are home to giants like Tencent, Alibaba, and ByteDance, and some of the fastest-moving tech development in the world.</p>
+        <p>Shenzhen and Beijing are home to companies like Tencent, Alibaba, and ByteDance.</p>
       </details>
     </section>
 
-    <section aria-labelledby="jobs-title">
-      <h2 id="jobs-title">Tech jobs I want to explore</h2>
+    <section>
+      <h2>Tech Jobs I Want to Explore</h2>
+
       <details>
         <summary>Agentic Workflow Engineer</summary>
         <p>I'd love to be an agentic workflow engineer. I love how fast-paced and always-changing the industry is, and there's always room to grow and learn alongside the people around me.</p>
       </details>
+
       <details>
         <summary>AI Automation Specialist</summary>
-        <p>I'm drawn to AI automation because I like solving the puzzle of a messy process and turning it into something smooth and hands-off. It's the kind of problem-solving I could do all day.</p>
+        <p>I'm drawn to AI automation because I like solving the puzzle of a messy process and turning it into something smooth and hands-off.</p>
       </details>
+
       <details>
         <summary>AI Engineer</summary>
         <p>AI engineering interests me because I want to be close to the technology itself, building the models and systems that everything else gets built on top of.</p>
       </details>
     </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Your Name</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Your Message</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
   </main>
 
-  <footer><p>&copy; <span id="year"></span> Sean Amihan</p></footer>
+  <footer>
+    <p>&copy; 2026 Sean Amihan</p>
+  </footer>
 
-  <dialog id="lightbox" aria-label="Enlarged screenshot">
-    <img id="lightbox-img" src="" alt="">
-    <form method="dialog"><button>Close</button></form>
-  </dialog>
-
-  <script src="script.js"></script>
 </body>
 </html>
