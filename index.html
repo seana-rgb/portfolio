@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sean Amihan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700;800&family=Newsreader:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="scene" aria-hidden="true">
+      <div class="layer sun"></div>
+      <div class="layer ridge-far"></div>
+      <div class="layer ridge-mid"></div>
+      <div class="layer dunes"></div>
+      <div class="layer cacti"></div>
+    </div>
+    <div class="hero-text">
+      <p id="greeting" class="greeting">Hello</p>
+      <h1>Sean Amihan</h1>
+      <p class="from">From Connecticut. Learning to code with CodeSquad.</p>
+      <nav class="links" aria-label="My profiles">
+        <a href="https://www.linkedin.com/in/sean-amihan-1145753a3/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/seana-rgb" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="work-title">
+      <h2 id="work-title">My CodeSquad work</h2>
+      <p class="note">Click a screenshot to enlarge it.</p>
+      <div class="shots">
+        <figure><button type="button" data-full="images/screenshot1.png"><img src="images/screenshot1.png" alt="Styled confidential memo page with code editor view"></button><figcaption>Confidential Memo: styling a page with borders, box shadows, and text formatting in CSS.</figcaption></figure>
+        <figure><button type="button" data-full="images/screenshot2.png"><img src="images/screenshot2.png" alt="Say Hello contact form with code editor view"></button><figcaption>Contact Form: a &quot;Say Hello&quot; form built with semantic HTML and a gradient background.</figcaption></figure>
+        <figure><button type="button" data-full="images/screenshot3.png"><img src="images/screenshot3.png" alt="Blog post card with code editor view"></button><figcaption>Blog Post Card: an image, title, and call-to-action button laid out as a reusable card component.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="trip" aria-labelledby="trip-title">
+      <h2 id="trip-title">Where I want to go</h2>
+      <p class="postcard">Next stop: <strong>YOUR DESTINATION</strong>. I want to go because WRITE ONE OR TWO SENTENCES.</p>
+    </section>
+
+    <section aria-labelledby="jobs-title">
+      <h2 id="jobs-title">Tech jobs I want to explore</h2>
+      <details>
+        <summary>Front-end developer</summary>
+        <p>Builds the parts of a website people see and click. Uses HTML, CSS, and JavaScript.</p>
+      </details>
+      <details>
+        <summary>Back-end developer</summary>
+        <p>Builds the servers, databases, and APIs behind an app.</p>
+      </details>
+      <details>
+        <summary>Data analyst</summary>
+        <p>Finds patterns in data and turns them into answers people can use.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer><p>&copy; <span id="year"></span> Sean Amihan</p></footer>
+
+  <dialog id="lightbox" aria-label="Enlarged screenshot">
+    <img id="lightbox-img" src="" alt="">
+    <form method="dialog"><button>Close</button></form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
